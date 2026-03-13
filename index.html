@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Academy | Premium Learning Portal</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at top right, #1e293b, #0f172a);
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass:hover {
+            background: rgba(255, 255, 255, 0.07);
+            transform: translateY(-8px);
+            border-color: rgba(59, 130, 246, 0.5);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+
+        /* WhatsApp Pulse Effect */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto" data-aos="fade-down">
+        <div class="text-xl font-extrabold tracking-tighter italic">SUCCESS<span class="text-blue-500 underline">ACADEMY</span></div>
+        <a href="#inquiry" class="text-sm bg-white/10 px-4 py-2 rounded-full hover:bg-white/20 transition">Join Now</a>
+    </nav>
+
+    <header class="py-20 text-center px-4" data-aos="zoom-out" data-aos-duration="1500">
+        <span class="bg-blue-500/10 text-blue-400 text-xs font-bold px-4 py-1.5 rounded-full border border-blue-500/20 uppercase tracking-widest">Enrollment Open 2026</span>
+        <h1 class="text-6xl md:text-7xl font-extrabold mt-6 mb-4 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">
+            Learn From The <br> Best Mentors.
+        </h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">Digitizing education for students in Bihar and beyond. Access high-quality notes and expert guidance with one click.</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12">
+        
+        <section class="md:col-span-12" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <span class="h-px w-8 bg-blue-500"></span> Hall of Fame
+            </h2>
+            <div class="flex gap-6 overflow-x-auto pb-6 no-scrollbar">
+                <div class="min-w-[300px] glass p-8 rounded-3xl border-t-4 border-blue-500">
+                    <div class="text-4xl mb-2">🏆</div>
+                    <h3 class="text-2xl font-bold text-white">Top 100 Ranks</h3>
+                    <p class="text-gray-400 mt-2">5 Students placed in National Merit list last year.</p>
+                </div>
+                <div class="min-w-[300px] glass p-8 rounded-3xl border-t-4 border-purple-500">
+                    <div class="text-4xl mb-2">⭐</div>
+                    <h3 class="text-2xl font-bold text-white">98.2% Results</h3>
+                    <p class="text-gray-400 mt-2">Highest passing percentage in the region for Boards.</p>
+                </div>
+                <div class="min-w-[300px] glass p-8 rounded-3xl border-t-4 border-green-500">
+                    <div class="text-4xl mb-2">🛡️</div>
+                    <h3 class="text-2xl font-bold text-white">Trusted by 5K+</h3>
+                    <p class="text-gray-400 mt-2">Verified reviews from students and parents alike.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="md:col-span-7" data-aos="fade-right">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <span class="h-px w-8 bg-blue-500"></span> Digital Library
+            </h2>
+            <div class="space-y-4">
+                <div class="glass p-6 rounded-2xl flex justify-between items-center group">
+                    <div>
+                        <h3 class="font-bold text-gray-200">Physics: Electromagnetic Waves</h3>
+                        <p class="text-xs text-gray-500 uppercase mt-1">Class 12th • PDF • 4.2 MB</p>
+                    </div>
+                    <a href="YOUR_DRIVE_LINK" class="p-4 rounded-xl bg-blue-600/10 text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        Get PDF
+                    </a>
+                </div>
+                <div class="glass p-6 rounded-2xl flex justify-between items-center group">
+                    <div>
+                        <h3 class="font-bold text-gray-200">Mathematics: Integration Masterclass</h3>
+                        <p class="text-xs text-gray-500 uppercase mt-1">JEE Prep • PDF • 2.8 MB</p>
+                    </div>
+                    <a href="YOUR_DRIVE_LINK" class="p-4 rounded-xl bg-blue-600/10 text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        Get PDF
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="inquiry" class="md:col-span-5" data-aos="fade-left">
+            <div class="glass p-8 rounded-[2.5rem] border-white/10 relative overflow-hidden">
+                <h3 class="text-2xl font-bold mb-2">Book a Call</h3>
+                <p class="text-gray-400 text-sm mb-6">Our experts will call you within 24 hours.</p>
+                
+                <form id="admissionForm" class="space-y-4">
+                    <input type="text" id="name" placeholder="Full Name" required 
+                           class="w-full bg-black/20 border border-white/10 p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition-all">
+                    
+                    <input type="tel" id="phone" placeholder="Mobile Number" pattern="[0-9]{10}" required 
+                           class="w-full bg-black/20 border border-white/10 p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none">
+                    
+                    <select id="course" class="w-full bg-black/20 border border-white/10 p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none">
+                        <option>Class 10th Boards</option>
+                        <option>Class 12th Boards</option>
+                        <option>JEE / NEET Mains</option>
+                        <option>Computer Science / Coding</option>
+                    </select>
+
+                    <button type="submit" class="w-full btn-primary py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-blue-500/20 active:scale-95 transition-all mt-4">
+                        Request Call Back
+                    </button>
+                </form>
+                <div id="successMsg" class="hidden mt-6 text-center text-green-400 font-bold bg-green-500/10 py-3 rounded-xl border border-green-500/20">
+                    ✓ Request Sent Successfully!
+                </div>
+            </div>
+        </section>
+
+        <section class="md:col-span-12 mt-12 mb-20" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-10 text-center">Guided By Professionals</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="glass p-8 rounded-[3rem] text-center border-b-8 border-blue-500/30">
+                    <div class="w-24 h-24 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-black shadow-2xl text-white">VA</div>
+                    <h4 class="text-xl font-bold text-white">Vijay Agarwal</h4>
+                    <p class="text-blue-400 text-sm mb-4">Master Mathematician</p>
+                    <p class="text-xs text-gray-500 leading-relaxed italic">"Simplifying complex equations into logical solutions for over 15 years."</p>
+                </div>
+
+                <div class="glass p-8 rounded-[3rem] text-center border-b-8 border-purple-500/30">
+                    <div class="w-24 h-24 bg-gradient-to-tr from-purple-600 to-pink-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-black shadow-2xl text-white">RV</div>
+                    <h4 class="text-xl font-bold text-white">Md.Nazeer sir</h4>
+                    <p class="text-purple-400 text-sm mb-4">Physics Expert</p>
+                    <p class="text-xs text-gray-500 leading-relaxed italic">"Visualizing the laws of nature through interactive experiments."</p>
+                </div>
+
+                <div class="glass p-8 rounded-[3rem] text-center border-b-8 border-orange-500/30">
+                    <div class="w-24 h-24 bg-gradient-to-tr from-orange-600 to-red-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-black shadow-2xl text-white">SK</div>
+                    <h4 class="text-xl font-bold text-white">Krrish Singh</h4>
+                    <p class="text-orange-400 text-sm mb-4">Chemistry Expert</p>
+                    <p class="text-xs text-gray-500 leading-relaxed italic">"Building a strong foundation for JEE and NEET aspirants."</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/7368849604" target="_blank" class="whatsapp-btn bg-green-500 p-4 rounded-full shadow-2xl">
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.499-5.688-1.447l-6.305 1.65zm6.59-4.019c1.46.904 3.12 1.381 4.815 1.382 5.013 0 9.091-4.078 9.093-9.092.001-2.43-.945-4.713-2.664-6.434s-4.005-2.665-6.433-2.666c-5.015 0-9.092 4.077-9.094 9.092-.001 1.83.547 3.591 1.581 5.118l-.165.491-1.011 3.693 3.784-.993.498.13z"/></svg>
+    </a>
+
+    <footer class="py-10 text-center border-t border-white/5 text-gray-600 text-sm">
+        &copy; 2026 Success Academy Bihar. Built by Neeraj Kumar Thakur.
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        const form = document.getElementById('admissionForm');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            btn.innerText = "Processing...";
+            btn.disabled = true;
+
+            // Replace 'YOUR_SHEETDB_API_URL' with your actual SheetDB endpoint
+            fetch('YOUR_SHEETDB_API_URL', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    data: [{
+                        'Name': document.getElementById('name').value,
+                        'Phone': document.getElementById('phone').value,
+                        'Course': document.getElementById('course').value,
+                        'Date': new Date().toLocaleString()
+                    }]
+                })
+            }).then(() => {
+                document.getElementById('successMsg').classList.remove('hidden');
+                btn.innerText = "Request Call Back";
+                btn.disabled = false;
+                form.reset();
+            });
+        });
+    </script>
+</body>
+</html>
